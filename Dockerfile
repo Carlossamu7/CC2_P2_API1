@@ -8,4 +8,4 @@ EXPOSE 8000
 
 RUN pip install --requirement requirements.txt
 
-CMD gunicorn --bind 0.0.0.0:8000 server:app --timeout 25000 --workers=1 --capture-output
+CMD gunicorn --bind 0.0.0.0:8000 server:app --timeout 20000 --workers=1 --capture-output
